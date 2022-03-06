@@ -1,0 +1,5 @@
+global_settings:
+  shops_per_player: 3
+  shops_owner_must_be_online: true
+  shops_maximum_catalog_size: 9
+shops:

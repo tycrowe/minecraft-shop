@@ -1,0 +1,7 @@
+com\tycrowe\dz\series\shop\components\util\InventoryUtil$InventoryTooLargeException.class
+com\tycrowe\dz\series\shop\components\shops\parts\ShopInstance.class
+com\tycrowe\dz\series\shop\components\DepartmentManager.class
+com\tycrowe\dz\series\shop\DzShopPlugin.class
+com\tycrowe\dz\series\shop\components\shops\exceptions\InvalidTransactionException.class
+com\tycrowe\dz\series\shop\components\shops\PlayerShop.class
+com\tycrowe\dz\series\shop\components\util\InventoryUtil.class

@@ -1,0 +1,48 @@
+mc-dubshop
+== SIGN CONFIG ==
+1   <shop>    [SHOP]
+2   <name>    name
+3   <....>    Dubpub
+4   <....>    1
+
+-- PLAYER COMMANDS --
+-- Add transaction item
+/shop <uuid|name> buy <number> <item> for <number> <item> <transactionUUID>
+-- Manage transaction item stock
+/shop <uuid|name> stock <transactionUUID> status
+/shop <uuid|name> stock <transactionUUID> deposit
+/shop <uuid|name> stock <transactionUUID> withdrawal
+
+-- Remove catalog item
+/shop <uuid|name> remove <catalog-id>
+
+-- Check shop status
+/shop <uuid|name> status 
+
+-- View shop stats
+/shop <uuid|name> stats
+
+-- Toggle shop status
+/shop <uuid|name> toggle <open|close>
+
+-- Add tag to shop
+/shop <uuid|name> tag <this,is,an,array,of,tags>
+
+-- Release store
+/shop <uuid|name> release <yes|no>
+
+-- List shops by owner
+/shop list <owner>
+
+-- List shops by tag
+/shop list <tag>
+
+-- Review shop
+/shop review <1|2|3|4|5>
+
+-- ADMIN --
+-- Set as server shop, infinite inventory
+/shop admin <uuid|name> no-inventory
+
+-- Teleport to shop
+/shop admin <uuid|name> teleport

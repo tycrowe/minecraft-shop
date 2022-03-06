@@ -1,0 +1,11 @@
+name: DzShop
+version: 1.0
+author: Ty Crowe
+main: com.tycrowe.dz.series.shop.DzShopPlugin
+api-version: 1.18
+website: https://tycrowe.com
+commands:
+  shop:
+    description: Contains commands for interacting with a player owned shop.
+    usage: /<command>
+    permission: dz.series.shop
