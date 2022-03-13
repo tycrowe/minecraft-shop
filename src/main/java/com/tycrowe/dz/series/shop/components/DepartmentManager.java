@@ -152,6 +152,10 @@ public class DepartmentManager implements CommandExecutor, Listener, TabComplete
                                     DzShopPlugin.publishMessage(commandSender, "Invalid usage: /shop stock <transaction-id> <option> [#]");
                                 }
                             }
+                            default -> {
+                                DzShopPlugin.publishMessage(commandSender, "Invalid usage!");
+                                return false;
+                            }
                         }
                     } else {
                         DzShopPlugin.publishMessage(commandSender, "No shop found given the name: %s!".formatted(shopName));
@@ -168,7 +172,9 @@ public class DepartmentManager implements CommandExecutor, Listener, TabComplete
             switch (s.toLowerCase(Locale.ROOT)) {
                 case "shop" -> {
                     if (strings.length == 1) {
-                        return departments.get(departmentPlayer.get(sender.getUniqueId())).getShopNames();
+                        if (departments.containsKey(departmentPlayer.get(sender.getUniqueId()))) {
+                            return departments.get(departmentPlayer.get(sender.getUniqueId())).getShopNames();
+                        }
                     } else if (strings.length == 2) {
                         return List.of("buy", "stock", "income");
                     } else {

@@ -7,5 +7,5 @@ website: https://tycrowe.com
 commands:
   shop:
     description: Contains commands for interacting with a player owned shop.
-    usage: /<command>
+    usage: /<command> <buy|stock|income>
     permission: dz.series.shop
